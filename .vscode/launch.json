@@ -5,7 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "(gdb) debug",
+            "name": "mingw-gdb",
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/vscdebug.exe",
@@ -17,7 +17,29 @@
             "externalConsole": true,
             "MIMode": "gdb",
             "miDebuggerPath": "gdb.exe",
-            "preLaunchTask": "make",
+            "preLaunchTask": "mingw-make",
+            "setupCommands": [
+                {
+                    "description": "为 gdb 启用整齐打印",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "name": "linux-gdb",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/vscdebug.exe",
+            "targetArchitecture": "x64",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "preLaunchTask": "linux-make",
             "setupCommands": [
                 {
                     "description": "为 gdb 启用整齐打印",

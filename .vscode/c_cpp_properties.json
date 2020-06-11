@@ -13,6 +13,20 @@
         "_UNICODE"
       ],
       "intelliSenseMode": "gcc-x64"
+    },
+    {
+      "name": "Linux",
+      "compilerPath": "/usr/bin/gcc",
+      "includePath": [
+        "/usr/include",
+        "/usr/local/include"
+      ],
+      "defines": [
+        "_DEBUG",
+        "UNICODE",
+        "_UNICODE"
+      ],
+      "intelliSenseMode": "gcc-x64"
     }
   ],
   "version": 4

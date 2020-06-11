@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
  * cmd as administrator
  * add system env:
@@ -10,5 +11,6 @@ int main(int argc, char *argv[])
 {
     int a = 25;
     printf("hello vscode %d.\n", a);
+
     return 0;
 }
